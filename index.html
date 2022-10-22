@@ -1,0 +1,441 @@
+﻿<head>
+<meta property="og:url" content="/ViewMenu.htm" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Flame" />
+<meta property="og:description" content="Flame Online Menu" />
+<meta property="og:image" content="/logo.gif" />
+</head>
+
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+
+
+function isTouchDevice() {
+  return (('ontouchstart' in window) ||
+     (navigator.maxTouchPoints > 0) ||
+     (navigator.msMaxTouchPoints > 0));
+}
+
+
+function ScrollRemove() {
+
+document.getElementsByClassName("tablinks")[0].click();
+
+
+/* use    (isTouchDevice())    instead but doesn't always work*/
+if (window.matchMedia("(pointer: coarse)").matches) {
+document.getElementById('ALeft').style.visibility = 'hidden';
+document.getElementById('ARight').style.visibility = 'hidden';
+} else {
+
+var style = document.createElement('style');
+style.innerHTML = `
+
+.arrow-right {
+  float:right;
+  width: 0;
+  height: 0; 
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+  border-left: 70px solid grey; 
+}
+.arrow-left {
+  float:left;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent; 
+  border-right:70px solid grey; 
+}
+  `;
+document.head.appendChild(style);
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+var newwindow
+
+function tidy()
+{
+if (newwindow && !newwindow.closed) { newwindow.close(); }
+}
+
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+
+  return false;  }
+
+function moveNavigation(byX) {
+  var navigation = document.getElementsByClassName("tab")[0];
+  navigation.scrollLeft = navigation.scrollLeft + byX;
+  }
+
+function popup(mylink, windowname) { if (! window.focus)return true; var href;
+if (typeof(mylink) == 'string') href=mylink; else href=mylink.href;
+window.open(href, windowname, 'width=400,height=800,scrollbars=yes'); return false; }
+
+window.onload = ScrollRemove;
+
+</script>
+
+
+
+
+<Style>
+    .tab-navigation {
+  border: 1px solid solid gray;
+}
+/* Style the tab */
+
+/* To Hide Scrollbar in Desktop PC */
+.tab::-webkit-scrollbar { 
+  display: none; 
+}
+
+
+    .tab .imgcss{  
+        animation:scroll 6s linear 0s infinite;  
+    } 
+    .tab .textcss {
+        animation:textScroll 6s linear 0s infinite;  
+    }
+
+
+.tab {
+    overflow-x: Auto;
+    background-color: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    white-space: nowrap;
+    border:solid 0px solid gray;
+    text-align:center;}
+/* Style the buttons that are used to open the tab content */
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+  background-color: #ddd;
+}
+/* Create an active/current tablink class */
+
+.tab button.active {
+  background-color: #ccc;
+}
+/* Style the tab content */
+
+.tabcontent {
+  display: none;
+  padding: 2px 2px;
+  border: 1px solid solid gray;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.tab-control {
+background-color: #ddd;
+}
+
+.tab button 
+            img {
+                width:100%;
+                height:100%;
+            },
+
+.tab-control {
+background-color: #f1f1f1;
+/* float: left; */
+display: inline-block;
+border:solid 1px solid gray;
+outline: none;
+cursor: pointer;
+padding: 0px 4px;
+transition: 0.3s;
+font-size: 60px;
+}
+
+.tablinks {border-radius: 0px;}
+/* Radius of Curavture at edge*/
+
+</Style>
+
+
+<script>var Currency1 = "LBP" </script><link rel="icon" type="image/x-icon" href="favicon.ico" > <form><input type="button" value="Main Page" onclick="location.href= '/'; return false;"  style="float: right;height:66; width:250; background-color: rgb(); color: RGB(118,55,165); font-size:32pt; font-weight:bold"></form><font face='Helvetica' style="color: rgb(73,10,120); font-size: 16pt;">Menu By MyShopPOS <br><a href="https://MyShopPOS. wordpress.com"  target="_blank" rel="noopener noreferrer" style="color: inherit;text-decoration:none; cursor: pointer; cursor: hand;">MyShopPOS. wordpress.com</a>
+<body style="background-color: rgb(); color: RGB(118,55,165); "><br> <font style="font-size: 14pt;">2022/10/22 15:31:35
+<title>Menu</title>
+<body background='menuback.jpg'><table border=0 style='border-width:0; width:100%; cellspacing='0' cellpadding='0'>
+<colgroup><col span='1'><col span='1' style='width: 60%;'><col span='1' style='width: 17%;'></colgroup>
+<tr>
+<td style='border-style: none; border-width: medium'></td>
+<td style='border-style: none; border-width: medium; width:100%'><p align='center'>
+<font face='Helvetica'><center>
+<style>
+@media (orientation: landscape) {img {width: 25%;}};
+@media (orientation: portrait) {img {width: 60%;}};
+</style>
+<img src='Logo.gif'  width="40%" alt='Missing Logo' class='center'>
+</center></font>
+<td style='border-style: none; border-width: medium'></td>
+</tr>
+<tr>
+<th style='border-style: none; border-width: medium'></th>
+<th style='border-style: none; border-width: medium'>
+<br><font face='Helvetica' style='font-size: 48pt'>Menu</font></th>
+<th style='border-style: none; border-width: medium'></th>
+</tr>
+<tr>
+<td style='border-style: none; border-width: medium'></td>
+<td align='center' style='border-style: none; border-width: medium'>
+<font face='Helvetica' style="color: rgb(73,10,120); font-size: 32pt;"><center>Ttel. 76-013667</font></td>
+<td align='right' style='border-style: none; border-width: medium'>
+</tr>
+</table><br>
+
+    <div class="tab-navigation">
+  <button style="height:0px; background-color:transparent; font-size:0pt" id="ALeft" class="tab-control arrow-left" onclick="moveNavigation(-.8*screen.width)"></button>
+
+  <button style="height:0px; background-color:transparent; font-size:0pt" id="ARight"  class="tab-control arrow-right" onclick="moveNavigation(.8*screen.width)"></button>
+
+<div class="tab">
+<button style="width:400px; height:200px" class="tablinks" onclick="return openCity(event, 'Potatoes')"><img src="Menu Photos\Potatoes.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="width:400px; height:200px" class="tablinks" onclick="return openCity(event, 'Salad')"><img src="Menu Photos\Salad.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="width:400px; height:200px" class="tablinks" onclick="return openCity(event, 'Filet')"><img src="Menu Photos\Filet.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="width:400px; height:200px" class="tablinks" onclick="return openCity(event, 'Platters')"><img src="Menu Photos\Platters.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="width:400px; height:200px" class="tablinks" onclick="return openCity(event, 'Burgers')"><img src="Menu Photos\Burgers.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="width:400px; height:200px" class="tablinks" onclick="return openCity(event, 'Sandwiches')"><img src="Menu Photos\Sandwiches.jpg"  width="100%" height="100%" alt="" /></button>
+<button style="width:400px; height:200px" class="tablinks" onclick="return openCity(event, 'DRINKS')"><img src="Menu Photos\DRINKS.jpg"  width="100%" height="100%" alt="" /></button>
+</div>
+
+<div id="Potatoes" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(73,10,120); border-collapse:collapse;}</style></head><body background='menuback.jpg'><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>ROASTED BABY POTATO
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">70,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>FRENCH FRIES
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">70,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>WEDGES
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">70,000 LBP
+</p></td></tr>
+
+</table>
+</div>
+
+<div id="Salad" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(73,10,120); border-collapse:collapse;}</style></head><body background='menuback.jpg'><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>SEASON SALAD
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">70,000 LBP
+</p></td></tr>
+
+</table>
+</div>
+
+<div id="Filet" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(73,10,120); border-collapse:collapse;}</style></head><body background='menuback.jpg'><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>GRILLED NORWAY SALMON FIKET (1.7kgs)
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>HALF GRILLED SALMON FILET
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">1 LBP
+</p></td></tr>
+
+</table>
+</div>
+
+<div id="Platters" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(73,10,120); border-collapse:collapse;}</style></head><body background='menuback.jpg'><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>CHICKEN CRISPY PLATTER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">200,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>GRILLED CHICKEN PLATTER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">215,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>GRILLED SALMON PLATTER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">650,000 LBP
+</p></td></tr>
+
+</table>
+</div>
+
+<div id="Burgers" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(73,10,120); border-collapse:collapse;}</style></head><body background='menuback.jpg'><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>PORK BURGER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">140,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>BEEF BURGER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">160,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>CHICKEN BURGER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">145,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>SALMON BURGER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">250,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>CRISPY BURGER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">155,000 LBP
+</p></td></tr>
+
+</table>
+</div>
+
+<div id="Sandwiches" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(73,10,120); border-collapse:collapse;}</style></head><body background='menuback.jpg'><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>GRILLED NORWAY SALMON
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">325,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>CRISPY CHICKEN
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">155,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>TAWOUK
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">110,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>SOUJOUK
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">140,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>SUBMARINE
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">200,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>CHICKEN SUBMARINE
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">235,000 LBP
+</p></td></tr>
+
+</table>
+</div>
+
+<div id="DRINKS" class="tabcontent">
+<table>
+<head><style>table, th, td {border: 0px solid rgb(73,10,120); border-collapse:collapse;}</style></head><body background='menuback.jpg'><table style="width:100%"><font face="Helvetica" style="font-size:55px"> &nbsp </font>
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>WATER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">10,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>PEPSI
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">25,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>MIRINDA
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">25,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>7UP
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">25,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>JUICE
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">12,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>BEIRUT BEER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">33,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>ALMAZA
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">38,000 LBP
+</p></td></tr>
+
+
+<tr><td  VALIGN=TOP><font face="Helvetica" style="font-size:45px"><p style='font-family:helvetica;font-size:45px;'>PERRIER
+</br></br></td>
+<td "col width=38%" valign="top" style="font-family:helvetica;font-size:45px; text-align:right;vertical-align:top">35,000 LBP
+</p></td></tr>
+
+</table>
+</div>
+
+
+
